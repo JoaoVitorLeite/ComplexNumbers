@@ -2,7 +2,11 @@
 
 ### Description
 
-Class to represent complex numbers in Scala.
+Class to represent complex numbers in Scala. A complex number is a number that can be expressed in the form `a + b*i`(as in the image below), where `a` and `b` are real numbers, and `i` is the solution of the equation `x^2 = -1`.
+
+<p align="center">
+  <img src="https://github.com/JoaoVitorLeite/ComplexNumbers/blob/master/unnamed.png">
+</p>
 
 ### About
 
