@@ -108,28 +108,28 @@ class ComplexNumbersSuite extends FunSuite {
     assert(a*b == new Complex(13,6))
   }
   test("Div 1"){
-    val a = new Complex(1,2)
-    val b = new Complex(5 , 4)
+    val a = new Complex(1D,2D)
+    val b = new Complex(5D, 4D)
     assert(a/b == new Complex(13D/41D,6D/41D))
   }
   test("Div 2"){
-    val a = new Complex(-1,2)
-    val b = new Complex(5 , 4)
+    val a = new Complex(-1D,2D)
+    val b = new Complex(5D, 4D)
     assert(a/b == new Complex(3D/41D,14D/41D))
   }
   test("Div 3"){
-    val a = new Complex(1,-2)
-    val b = new Complex(5 , 4)
+    val a = new Complex(1D,-2D)
+    val b = new Complex(5D, 4D)
     assert(a/b == new Complex(-3D/41D,-14D/41D))
   }
   test("Div 4"){
-    val a = new Complex(1,2)
-    val b = new Complex(-5 , 4)
+    val a = new Complex(1D,2D)
+    val b = new Complex(-5D, 4D)
     assert(a/b == new Complex(3D/41D,-14D/41D))
   }
   test("Div 5"){
-    val a = new Complex(1,2)
-    val b = new Complex(5 , -4)
+    val a = new Complex(1D,2D)
+    val b = new Complex(5D, -4D)
     assert(a/b == new Complex(-3D/41D,14D/41D))
   }
   test("Properties conjugate 1"){
@@ -147,9 +147,9 @@ class ComplexNumbersSuite extends FunSuite {
     assert(a.conjungate.modulus == a.modulus)
   }
   test("Properties absolute value 2"){
-    val a = new Complex(20,95)
-    val b = new Complex(12,105)
-    assert((a*b).modulus == a.modulus * b.modulus)
+    val a = new Complex(20D,95D)
+    val b = new Complex(12D,105D)
+    assert((a*b).modulus == (a.modulus * b.modulus))
   }
   test("Properties absolute value 3"){
     val a = new Complex(2,7)
@@ -181,6 +181,6 @@ class ComplexNumbersSuite extends FunSuite {
     assert(a.polarForm == s)
   }
   test("Inverse"){
-    assert(new Complex(2,4).inverse == new Complex(1D/10D, -2D/10D))
+    assert(new Complex(2D,4D).inverse == new Complex(1D/10D, -2D/10D))
   }
 }
