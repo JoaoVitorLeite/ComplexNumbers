@@ -2,6 +2,7 @@ package complexNumbers
 
 import Num.Implicits._
 
+
 /***
  * @author João Vitor Leite
  *
